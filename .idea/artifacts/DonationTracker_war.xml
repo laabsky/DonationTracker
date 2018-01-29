@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="DonationTracker:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="DonationTracker.war">
+      <element id="artifact" artifact-name="DonationTracker:war exploded" />
+    </root>
+  </artifact>
+</component>

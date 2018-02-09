@@ -14,12 +14,11 @@ retrieve real time dollar amounts to add to their tax forms.
 * Security/Authentication
   * Tomcat's JDBC Realm Authentication
   * Admin role: create/read/update/delete (crud) of all data
-  * User role: create trail, create trail report, edit data they have entered previously
-  * All: anyone can view trail information (no login)
+  * User role: create profile, submit item data, edit data they have entered previously
 * Database
   * MySQL
   * Store users
-  * Store all data for individual user accounts and profiles
+  * Store all data for individual user accounts and profiles, and reference lookup data
 * ORM Framework
   * Hibernate 5
 * Dependency Management
@@ -29,7 +28,7 @@ retrieve real time dollar amounts to add to their tax forms.
 * CSS 
   * Bootstrap
 * Data Validation
-  * Bootstrap Validator for front end
+  * Javascript validation front-end
   * Explore Hibernate's validation
 * Logging
   * Configurable logging using Log4J2 
@@ -44,10 +43,10 @@ retrieve real time dollar amounts to add to their tax forms.
 
 ### Design
 
-* [Screen Design](DesignDocuments/Screens.md)
-* [Application Flow](DesignDocuments/applicationFlow.md)
-* [Database Design](DesignDocuments/databaseDiagram.png)
+* [Screen Design](designDocs/screens.md)
+* [Application Flow](designDocs/applicationFlow.md)
+* [Database Design](designDocs/databaseDiagram.png)
 
-### [Project Plan](ProjectPlan.md)
+### [Project Plan](projectPlan.md)
 
-### [Development Journal](Journal.md)
+### [Time Log](timeLog.md)

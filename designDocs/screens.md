@@ -2,20 +2,20 @@
 
 ### Home Page
 
-![Home Page](homepage.pdf)
+![Home Page](homepage.png)
 
 ### Sign-up Page
 
-![Sign-up Page](newProfile.pdf)
+![Sign-up Page](newProfile.png)
 
 ### Edit Profile Page
 
-![Edit Profile Page](editProfile.pdf)
+![Edit Profile Page](editProfile.png)
 
 ### Profile Landing Page
 
-![Profile Landing Page](profileLanding.pdf)
+![Profile Landing Page](profileLanding.png)
 
 ### Submit New Item Page
 
-![Submit New Item Page](submitNewItem.pdf)
+![Submit New Item Page](submitNewItem.png)

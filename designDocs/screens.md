@@ -18,4 +18,4 @@
 
 ### Submit New Item Page
 
-![Submit New Item Page](submitNewItem.png)
+![Submit New Item Page](submitNew.png)

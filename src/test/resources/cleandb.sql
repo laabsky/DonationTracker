@@ -1,0 +1,2 @@
+delete from users;
+INSERT INTO users VALUES (1,'Joe','Coyne','jcoyne','supersecret1','joecoyne@gmail.com'),(2,'Fred','Hensen','fhensen','supersecret2','fredhensen@gmail.com'),(3,'Barney','Curry','bcurry','supersecret3','bcurry@yahoo.com'),(4,'Karen','Mack','kmack','supersecret4','kmack@hotmail.com'),(5,'Dianne','Klein','dklein','supersecret5','dianne.klein@gmail.com'),(6,'Dawn','Tillman','dtillman','supersecret6','dawntillman@aol.com');

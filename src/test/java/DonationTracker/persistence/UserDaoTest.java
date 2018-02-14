@@ -73,7 +73,6 @@ class UserDaoTest {
      */
     @Test
     void updateSuccess() {
-        //  TODO For some reason this isn't updating the email address
         String newEmail = "kmack12@gmail.com";
         User userToUpdate = dao.getUserById(4);
         userToUpdate.setEmail(newEmail);
@@ -96,7 +95,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName", "Curry");
+        List<User> users = dao.getByPropertyEqual("lastName", "Curry");
         assertEquals(1, users.size());
         assertEquals(3, users.get(0).getId());
     }

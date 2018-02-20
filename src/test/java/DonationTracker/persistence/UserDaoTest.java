@@ -1,5 +1,6 @@
 package DonationTracker.persistence;
 
+import DonationTracker.entity.Item;
 import DonationTracker.entity.User;
 import DonationTracker.test.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -60,11 +61,11 @@ class UserDaoTest {
     @Test
     void insertSuccess() {
 
-        User newUser = new User("Fred", "Flintstone", "fflintstone", "password1", "flinstone2@gmail.com");
+        User newUser = new User("Test", "Tester", "test1", "password1", "test@gmail.com");
         int id = dao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = dao.getUserById(id);
-        assertEquals("Fred", insertedUser.getFirstName());
+        assertEquals("Test", insertedUser.getFirstName());
 
     }
 
@@ -107,5 +108,26 @@ class UserDaoTest {
     void getByPropertyLikeSuccess() {
         List<User> users = dao.getByPropertyLike("lastName", "c");
         assertEquals(3, users.size());
+    }
+
+    /**
+     * Verify successful insert of a user and an order
+     */
+    @Test
+    void insertWithItemSuccess() {
+
+        int itemLookupId = 3;
+        double amount = 100.00;
+        String charity = "Boyscouts of America";
+        String date = "2018-01-31";
+        User newUser = new User("Fred", "Flintstone", "fflintstone", "password1", "flinstone2@gmail.com");
+        Item item = new Item( newUser, itemLookupId, amount, charity, date);
+        newUser.addItem(item);
+        int id = dao.insert(newUser);
+        assertNotEquals(0, id);
+        User insertedUser = dao.getUserById(id);
+        assertNotNull(insertedUser);
+        assertEquals("Fred", insertedUser.getFirstName());
+        assertEquals(1, insertedUser.getItems().size());
     }
 }

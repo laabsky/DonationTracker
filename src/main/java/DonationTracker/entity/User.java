@@ -36,6 +36,19 @@ public class User {
     @Column(name = "password")
     private String password;
 
+    /**
+     * Bidirectional @OneToMany
+     The bidirectional @OneToMany association also requires a @ManyToOne association on the child side.
+     Although the Domain Model exposes two sides to navigate this association, behind the scenes,
+     the relational database has only one foreign key for this relationship.
+     Every bidirectional association must have one owning side only (the child side),
+     the other one being referred to as the inverse (or the mappedBy) side.
+     Foreign key is on the child table (Order in this example)
+     Source: http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#associations-one-to-many
+     */
+    @OneToMany(mappedBy = "users", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Item> items = new HashSet<>();
+
 
     /**
      * Instantiates a new User.
@@ -186,6 +199,28 @@ public class User {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     * Gets items.
+     *
+     * @return the items set
+     */
+    public Set<Item> getItems() {
+        return items;
+    }
+
+    /**
+     * Sets the items set.
+     *
+     * @param items the items set
+     */
+    public void setItems(Set<Item> items) {
+        this.items = items;
+    }
+
+    public void addItem(Item item) {
+        items.add(item);
     }
 
     @Override

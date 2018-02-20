@@ -1,2 +1,11 @@
+delete from itemSubmit;
 delete from users;
-INSERT INTO users VALUES (1,'Joe','Coyne','jcoyne','supersecret1','joecoyne@gmail.com'),(2,'Fred','Hensen','fhensen','supersecret2','fredhensen@gmail.com'),(3,'Barney','Curry','bcurry','supersecret3','bcurry@yahoo.com'),(4,'Karen','Mack','kmack','supersecret4','kmack@hotmail.com'),(5,'Dianne','Klein','dklein','supersecret5','dianne.klein@gmail.com'),(6,'Dawn','Tillman','dtillman','supersecret6','dawntillman@aol.com');
+INSERT INTO users VALUES (1,'Joe','Coyne','jcoyne','supersecret1','joecoyne@gmail.com');
+INSERT INTO users VALUES (2,'Fred','Hensen','fhensen','supersecret2','fredhensen@gmail.com');
+INSERT INTO users VALUES (3,'Barney','Curry','bcurry','supersecret3','bcurry@yahoo.com');
+INSERT INTO users VALUES (4,'Karen','Mack','kmack','supersecret4','kmack@hotmail.com');
+INSERT INTO users VALUES (5,'Dianne','Klein','dklein','supersecret5','dianne.klein@gmail.com');
+INSERT INTO users VALUES (6,'Dawn','Tillman','dtillman','supersecret6','dawntillman@aol.com');
+INSERT INTO itemSubmit VALUES (1, 1, 3, 200.00, 'March of Dimes', "2018-02-19");
+INSERT INTO itemSubmit VALUES (2, 1, 2, 7.00, 'Goodwill', "2018-02-12");
+INSERT INTO itemSubmit VALUES (3, 2, 1, 30.00, 'Goodwill', "2018-02-14");

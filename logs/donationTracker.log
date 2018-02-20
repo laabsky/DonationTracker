@@ -14,3 +14,99 @@
 [DEBUG] 2018-02-13 18:10:04.394 [main] UserDao - Searching for user with lastName = c
 [DEBUG] 2018-02-13 18:13:46.432 [main] UserDao - Searching for user with lastName = Curry
 [DEBUG] 2018-02-13 18:13:46.635 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-19 17:28:39.297 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 17:28:39.333 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 17:30:26.488 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 17:30:26.625 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 18:11:39.816 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 18:11:39.894 [main] ItemDao - Searching for user with date = 2018
+[ERROR] 2018-02-19 18:22:05.141 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:22:06.603 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:22:06.868 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:22:07.134 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:22:07.462 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:22:07.712 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:22:07.915 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:22:08.134 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:25:30.336 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:25:32.680 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:25:32.946 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:25:33.024 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[DEBUG] 2018-02-19 18:25:33.024 [main] ItemDao - Searching for item with charity = Goodwill
+[ERROR] 2018-02-19 18:25:33.102 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[DEBUG] 2018-02-19 18:25:33.102 [main] ItemDao - Searching for user with date = 2018
+[ERROR] 2018-02-19 18:25:33.165 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:25:33.180 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[ERROR] 2018-02-19 18:25:33.227 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'users_id' in 'field list'
+[DEBUG] 2018-02-19 18:31:04.302 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 18:31:04.380 [main] ItemDao - Searching for user with date = 2018
+[ERROR] 2018-02-19 18:43:46.101 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:45:30.608 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:45:43.977 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:45:46.263 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:45:46.294 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-02-19 18:45:46.294 [main] UserDao - Searching for user with lastName = Curry
+[ERROR] 2018-02-19 18:45:46.544 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-02-19 18:45:46.560 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2018-02-19 18:45:46.607 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:45:46.669 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:45:46.716 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:45:46.748 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:45:46.826 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:06.404 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:09.310 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:11.499 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:11.562 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-02-19 18:49:11.562 [main] UserDao - Searching for user with lastName = Curry
+[ERROR] 2018-02-19 18:49:12.656 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-02-19 18:49:12.656 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2018-02-19 18:49:12.718 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:12.781 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:12.812 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:12.843 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:12.906 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:13.187 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:13.249 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-02-19 18:49:13.249 [main] UserDao - Searching for user with lastName = Curry
+[ERROR] 2018-02-19 18:49:13.632 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-02-19 18:49:13.632 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2018-02-19 18:49:13.694 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:13.757 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:13.788 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:13.851 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:49:13.944 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:50:56.397 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:51:50.005 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-02-19 18:54:30.343 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`testdonationtracker`.`itemsubmit`, CONSTRAINT `itemsubmit_ibfk_1` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-02-19 19:12:45.675 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-19 19:12:45.925 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-19 19:13:00.858 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 19:13:00.952 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 19:19:16.946 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 19:19:17.025 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 19:20:26.755 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 19:20:26.833 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 19:32:12.435 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 19:32:12.529 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 19:32:27.861 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-19 19:32:28.116 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-19 19:33:17.131 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 19:33:17.225 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 19:34:06.941 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-19 19:34:07.244 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-19 19:57:07.271 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 19:57:07.349 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 19:57:07.646 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-19 19:57:07.708 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-19 19:58:07.285 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 19:58:07.394 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 19:58:07.722 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-19 19:58:07.769 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-19 20:28:41.412 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 20:28:41.471 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 20:28:41.761 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-19 20:28:41.800 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-19 20:32:44.268 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-19 20:32:44.330 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-19 20:32:44.622 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-19 20:32:44.657 [main] UserDao - Searching for user with lastName = c

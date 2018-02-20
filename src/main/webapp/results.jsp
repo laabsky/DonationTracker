@@ -7,13 +7,18 @@
 <div class="container-fluid">
     <h2>Search Results: </h2>
     <table class="table table-striped table-bordered table-hover table-condensed">
-        <tr><th>First Name</th><th>Last Name</th><th>User Name</th><th>Email</th></tr>
+        <tr><th>First Name</th><th>Last Name</th><th>User Name</th><th>Email</th><th>Items</th></tr>
         <c:forEach var="user" items="${users}">
             <tr>
                 <td>${user.getFirstName()}</td>
                 <td>${user.getLastName()}</td>
                 <td>${user.getUserName()}</td>
                 <td>${user.getEmail()}</td>
+                <td>
+                    <c:forEach var="item" items="${user.items}">
+                        ${item.amount}  ${item.charity} <br />
+                    </c:forEach>
+                </td>
             </tr>
         </c:forEach>
     </table>

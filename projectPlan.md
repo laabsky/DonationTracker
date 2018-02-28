@@ -34,7 +34,7 @@
 - [x] Add the role entity
 - [x] Create the role dao
 - [x] Create the role dao unit tests
-- [x] Add a jsp to display user and role
+- [x] Add a jsp to display user and associated items
 - [ ] Add jsp to add a user
 
 ### Week 6
@@ -42,6 +42,7 @@
 - [x] Create db on AWS
 - [x] Deploy to AWS for first time
 - [x] Weekly journal entry
+- [ ] Update JSP for role
 - [ ] Add update and delete functionality in jsp for user and role
 - [ ] Build the item submission jsp
 - [ ] Build the profile landing jsp

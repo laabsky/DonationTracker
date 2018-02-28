@@ -118,3 +118,7 @@
 [DEBUG] 2018-02-27 18:16:29.582 [main] ItemDao - Searching for user with date = 2018
 [DEBUG] 2018-02-27 18:16:29.980 [main] UserDao - Searching for user with lastName = Curry
 [DEBUG] 2018-02-27 18:16:30.062 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-02-27 18:27:22.673 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-02-27 18:27:22.720 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-02-27 18:27:23.001 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-02-27 18:27:23.033 [main] UserDao - Searching for user with lastName = c

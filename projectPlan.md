@@ -34,7 +34,7 @@
 - [x] Add the role entity
 - [x] Create the role dao
 - [x] Create the role dao unit tests
-- [ ] Add a jsp to display user and role
+- [x] Add a jsp to display user and role
 - [ ] Add jsp to add a user
 
 ### Week 6

@@ -13,39 +13,39 @@
 - [x] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
 
 ### Week 4
-- [ ] Complete database design
-- [ ] Create the database and user table
-- [ ] Create the user entity class and annotate for hibernate
-- [ ] Create user dao
-- [ ] Create the test database
-- [ ] Create user dao unit tests
-- [ ] Weekly journal entry
+- [x] Complete database design
+- [x] Create the database and user table
+- [x] Create the user entity class and annotate for hibernate
+- [x] Create user dao
+- [x] Create the test database
+- [x] Create user dao unit tests
+- [x] Weekly journal entry
 - [ ] Create application flow
-- [ ] Set up logging
+- [x] Set up logging
 - [ ] Create class uml diagram
-- [ ] Prepare for Week 5 peer design/code review
+- [x] Prepare for Week 5 peer design/code review
 
 
 ### Week 5
 
 - [ ] Create the template for all jsps using bootstrap or materialize
-- [ ] Weekly journal entry
-- [ ] Add the role table
-- [ ] Add the role entity
-- [ ] Create the role dao
-- [ ] Create the role dao unit tests
+- [x] Weekly journal entry
+- [x] Add the role table
+- [x] Add the role entity
+- [x] Create the role dao
+- [x] Create the role dao unit tests
 - [ ] Add a jsp to display user and role
 - [ ] Add jsp to add a user
 
 ### Week 6
 
-- [ ] Create db on AWS
-- [ ] Deploy to AWS for first time
-- [ ] Weekly journal entry
+- [x] Create db on AWS
+- [x] Deploy to AWS for first time
+- [x] Weekly journal entry
 - [ ] Add update and delete functionality in jsp for user and role
 - [ ] Build the item submission jsp
 - [ ] Build the profile landing jsp
-- [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
+- [x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
 
 
 ### Week 7
@@ -59,7 +59,7 @@
 ### Week 8
 
 - [ ] Weekly journal entry
-- [ ] Integration with google maps api
+- [ ] Integration with calendar api
 - [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
 
 ### Week 9

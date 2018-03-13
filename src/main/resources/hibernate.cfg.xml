@@ -18,6 +18,7 @@
 
         <mapping class="DonationTracker.entity.User"/>
         <mapping class="DonationTracker.entity.Item"/>
+        <mapping class="DonationTracker.entity.Role"/>
 
     </session-factory>
 

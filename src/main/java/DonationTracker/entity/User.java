@@ -49,6 +49,8 @@ public class User {
     @OneToMany(mappedBy = "users", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Item> items = new HashSet<>();
 
+    @OneToMany(mappedBy = "users", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Role> roles = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -221,6 +223,34 @@ public class User {
 
     public void addItem(Item item) {
         items.add(item);
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
+    /**
+     * Add role.
+     *
+     * @param role the role
+     */
+    public void addRole(Role role) {
+        roles.add(role);
+        role.setUser(this);
+    }
+
+    /**
+     * Remove role.
+     *
+     * @param role the role
+     */
+    public void removeRole(Role role) {
+        roles.remove(role);
+        role.setUser(null);
     }
 
     @Override

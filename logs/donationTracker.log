@@ -158,3 +158,163 @@
 [DEBUG] 2018-03-13 18:32:02.634 [main] ItemDao - Searching for user with date = 2018
 [DEBUG] 2018-03-13 18:32:03.072 [main] UserDao - Searching for user with lastName = Curry
 [DEBUG] 2018-03-13 18:32:03.119 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 18:47:08.891 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 18:47:08.970 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 18:47:09.508 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 18:47:09.602 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 19:02:17.025 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 19:02:17.103 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 19:02:17.520 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 19:02:17.561 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 19:42:03.770 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 19:42:03.832 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 19:42:04.160 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 19:42:04.254 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2018-03-20 19:45:33.069 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.021 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.318 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.333 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 19:45:35.333 [main] ItemDao - Searching for item with charity = Goodwill
+[ERROR] 2018-03-20 19:45:35.364 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 19:45:35.364 [main] ItemDao - Searching for user with date = 2018
+[ERROR] 2018-03-20 19:45:35.380 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.380 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.396 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.411 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.427 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.443 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 19:45:35.443 [main] UserDao - Searching for user with lastName = Curry
+[ERROR] 2018-03-20 19:45:35.489 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 19:45:35.489 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2018-03-20 19:45:35.521 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.568 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.583 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.599 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:45:35.630 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:37.789 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:39.883 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.180 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.195 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 19:46:40.195 [main] ItemDao - Searching for item with charity = Goodwill
+[ERROR] 2018-03-20 19:46:40.242 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 19:46:40.242 [main] ItemDao - Searching for user with date = 2018
+[ERROR] 2018-03-20 19:46:40.430 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.445 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.461 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.492 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.492 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.524 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 19:46:40.524 [main] UserDao - Searching for user with lastName = Curry
+[ERROR] 2018-03-20 19:46:40.615 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 19:46:40.615 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2018-03-20 19:46:40.630 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.693 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.724 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.724 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 19:46:40.755 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 19:47:21.782 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 19:47:21.844 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 19:47:22.125 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 19:47:22.204 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 19:51:24.896 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 19:51:24.959 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 19:51:25.381 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 19:51:25.459 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 19:55:50.184 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 19:55:50.262 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 19:55:50.669 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 19:55:50.716 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2018-03-20 20:01:56.248 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.341 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.607 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.622 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[DEBUG] 2018-03-20 20:01:58.622 [main] ItemDao - Searching for item with charity = Goodwill
+[ERROR] 2018-03-20 20:01:58.669 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[DEBUG] 2018-03-20 20:01:58.669 [main] ItemDao - Searching for user with date = 2018
+[ERROR] 2018-03-20 20:01:58.685 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.700 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.716 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.747 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.763 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.779 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[DEBUG] 2018-03-20 20:01:58.779 [main] UserDao - Searching for user with lastName = Curry
+[ERROR] 2018-03-20 20:01:58.794 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[DEBUG] 2018-03-20 20:01:58.794 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2018-03-20 20:01:58.810 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.872 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.888 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.888 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:01:58.904 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:53.859 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.016 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.250 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.266 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[DEBUG] 2018-03-20 20:03:56.266 [main] ItemDao - Searching for item with charity = Goodwill
+[ERROR] 2018-03-20 20:03:56.313 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[DEBUG] 2018-03-20 20:03:56.313 [main] ItemDao - Searching for user with date = 2018
+[ERROR] 2018-03-20 20:03:56.328 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.344 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.375 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.453 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.484 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.484 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[DEBUG] 2018-03-20 20:03:56.484 [main] UserDao - Searching for user with lastName = Curry
+[ERROR] 2018-03-20 20:03:56.500 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[DEBUG] 2018-03-20 20:03:56.500 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2018-03-20 20:03:56.516 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.641 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.641 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.656 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[ERROR] 2018-03-20 20:03:56.672 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'donationtracker.roles' doesn't exist
+[DEBUG] 2018-03-20 20:07:41.029 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 20:07:41.201 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 20:07:41.936 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 20:07:42.029 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 20:08:13.754 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 20:08:13.832 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 20:08:14.129 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 20:08:14.176 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 20:13:42.913 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 20:13:42.975 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 20:13:43.319 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 20:13:43.366 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 20:18:43.937 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 20:18:44.000 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 20:18:44.359 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 20:18:44.406 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 20:19:29.789 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 20:19:29.899 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 20:19:30.368 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 20:19:30.446 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 20:24:00.474 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 20:24:00.568 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 20:24:00.925 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 20:24:00.971 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 20:30:34.036 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 20:30:34.098 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 20:30:34.423 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 20:30:34.470 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 20:34:58.709 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 20:34:58.787 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 20:34:59.131 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 20:34:59.162 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-20 20:54:38.198 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-20 20:54:38.292 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-20 20:54:38.667 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-20 20:54:38.714 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-26 20:53:20.731 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-26 20:53:20.807 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-26 20:53:21.146 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-26 20:53:21.184 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-26 21:02:15.463 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-26 21:02:15.577 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-26 21:02:16.010 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-26 21:02:16.055 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-26 21:09:31.753 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-26 21:09:31.836 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-26 21:09:32.265 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-26 21:09:32.313 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-03-26 21:11:40.979 [main] ItemDao - Searching for item with charity = Goodwill
+[DEBUG] 2018-03-26 21:11:41.068 [main] ItemDao - Searching for user with date = 2018
+[DEBUG] 2018-03-26 21:11:41.454 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2018-03-26 21:11:41.495 [main] UserDao - Searching for user with lastName = c

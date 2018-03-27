@@ -1,5 +1,6 @@
 delete from itemSubmit;
 delete from users;
+delete from role;
 INSERT INTO users VALUES (1,'Joe','Coyne','jcoyne','supersecret1','joecoyne@gmail.com');
 INSERT INTO users VALUES (2,'Fred','Hensen','fhensen','supersecret2','fredhensen@gmail.com');
 INSERT INTO users VALUES (3,'Barney','Curry','bcurry','supersecret3','bcurry@yahoo.com');

@@ -13,6 +13,14 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+
 public class UserDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
@@ -137,6 +145,17 @@ public class UserDao {
         List<User> users = session.createQuery( query ).getResultList();
         session.close();
         return users;
+    }
+
+    @Path("/users")
+    // The Java method will process HTTP GET requests
+    @GET
+    // The Java method will produce content identified by the MIME Media type "text/plain"
+    @Produces("text/plain")
+    public Response getUsersService() {
+        List<User> results =  getAllUsers();
+        String test = "test";
+        return Response.status(200).entity(test).build();
     }
 
 }

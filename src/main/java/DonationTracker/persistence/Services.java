@@ -1,5 +1,7 @@
 package DonationTracker.persistence;
 
+import DonationTracker.controller.ServicesResponse;
+
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -15,7 +17,7 @@ public class Services extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
-        h.add(UserDao.class );
+        h.add(ServicesResponse.class );
         return h;
     }
 }

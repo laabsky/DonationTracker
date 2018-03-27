@@ -2,6 +2,9 @@ package DonationTracker.controller;
 
 import DonationTracker.entity.User;
 import DonationTracker.persistence.UserDao;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -19,11 +22,17 @@ public class ServicesResponse {
     // The Java method will produce content identified by the MIME Media type "text/plain"
     //@Produces(MediaType.APPLICATION_JSON)
     @Produces("text/plain")
-    public Response getUsersService() { ;
-        //UserDao userDao = new UserDao();
-        //List<User> results = userDao.getAllUsers();
-        String test = "test";
-        return Response.status(200).entity(test).build();
+    public Response getUsersService() throws JsonProcessingException { ;
+        UserDao userDao = new UserDao();
+        List<User> results = userDao.getAllUsers();
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        //Set pretty printing of json
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        //1. Convert List of Person objects to JSON
+        String arrayToJson = objectMapper.writeValueAsString(results);
+
+        return Response.status(200).entity(arrayToJson).build();
 
     }
 }

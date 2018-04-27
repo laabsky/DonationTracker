@@ -9,19 +9,26 @@
     <table class="table table-striped table-bordered table-hover table-condensed">
         <tr><th>First Name</th><th>Last Name</th><th>User Name</th><th>Email</th><th>Items</th></tr>
         <c:forEach var="user" items="${users}">
-            <tr>
-                <td>${user.getFirstName()}</td>
-                <td>${user.getLastName()}</td>
-                <td>${user.getUserName()}</td>
-                <td>${user.getEmail()}</td>
-                <td>
-                    <c:forEach var="item" items="${user.items}">
-                        ${item.amount}  ${item.charity} <br />
-                    </c:forEach>
-                </td>
-            </tr>
-        </c:forEach>
+        <tr>
+            <td>${user.getFirstName()}</td>
+            <td>${user.getLastName()}</td>
+            <td>${user.getUserName()}</td>
+            <td>${user.getEmail()}</td>
+            <td>
+                <c:forEach var="item" items="${user.items}">
+                    ${item.amount}  ${item.charity} <br />
+                </c:forEach>
+            </td>
+        </tr>
+    </c:forEach>
     </table>
+</div>
+<div>
+    <ul>
+        <c:forEach var="charityName" items="${charityNames}">
+            <li>${charityName}</li>
+        </c:forEach>
+    </ul>
 </div>
 <a href="index.jsp">Home</a>
 </body>

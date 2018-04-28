@@ -19,15 +19,37 @@
     <!-- Protect user search page. -->
     <security-constraint>
         <web-resource-collection>
-            <web-resource-name>search</web-resource-name>
-            <url-pattern>/search.jsp</url-pattern>
+            <web-resource-name>adminServlet</web-resource-name>
+            <url-pattern>toAdminServlet</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>admin</role-name>
         </auth-constraint>
     </security-constraint>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>deleteUserServlet</web-resource-name>
+            <url-pattern>deleteUserServlet</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>profileServlet</web-resource-name>
+            <url-pattern>toProfileServlet</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+            <role-name>user</role-name>
+        </auth-constraint>
+    </security-constraint>
 
     <security-role>
         <role-name>admin</role-name>
+    </security-role>
+    <security-role>
+        <role-name>user</role-name>
     </security-role>
 </web-app>

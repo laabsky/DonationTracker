@@ -56,7 +56,7 @@ class ItemDaoTest {
         UserDao userDao = new UserDao();
         User user = userDao.getUserById(1);
         String charity = "Salvation Army";
-        Item newItem = new Item(user, 1, 30, charity, "2018-02-10");
+        Item newItem = new Item(user, "money", 30, charity, "2018-02-10");
         //Order newOrder = new Order(orderDescription, user);
         user.addItem(newItem);
         int id = dao.insert(newItem);

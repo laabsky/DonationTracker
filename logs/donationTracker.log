@@ -378,3 +378,5 @@
 [DEBUG] 2018-04-26 20:24:28.313 [main] ItemDao - Searching for user with date = 2018
 [DEBUG] 2018-04-26 20:24:28.674 [main] UserDao - Searching for user with lastName = Curry
 [DEBUG] 2018-04-26 20:24:28.717 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2018-04-27 22:12:12.306 [main] RoleDao - Searching for role with role_name = user
+[DEBUG] 2018-04-27 22:13:53.573 [main] RoleDao - Searching for role with roleName = user

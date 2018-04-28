@@ -13,3 +13,4 @@ INSERT INTO itemSubmit VALUES (2, 1, 2, 7.00, 'Goodwill', "2018-02-12");
 INSERT INTO itemSubmit VALUES (3, 2, 1, 30.00, 'Goodwill', "2018-02-14");
 INSERT INTO role VALUES (1, 'admin', 'jcoyne', 1);
 INSERT INTO role VALUES (2, 'admin', 'admin', 7);
+INSERT INTO role VALUES (3, 'user', 'bcurry', 3);

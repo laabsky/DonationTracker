@@ -39,6 +39,9 @@ public class Item {
     @Column(name = "amount")
     private double amount;
 
+    @Column(name = "description")
+    private String description;
+
     // Every Entity must have a unique identifier which is annotated @Id
     // Notice there is no @Column here as the column and instance variable name are the same
     @Id
@@ -63,14 +66,13 @@ public class Item {
      * Instantiates a new Item donated using itemLookup.
      *
      * @param users          the user from the users table
-     * @param itemLookupId   the itemLookup id from the itemLookup table (if applicable)
      * @param amount                      the value of the item
      * @param charity        the charity given the donation
      * @param date           the date of donation
      */
-    public Item (User users, int itemLookupId, double amount, String charity, String date) {
+    public Item (User users, String description, double amount, String charity, String date) {
         this.users = users;
-        this.itemLookupId = itemLookupId;
+        this.description = description;
         this.amount = amount;
         this.charity = charity;
         this.date = date;
@@ -80,15 +82,14 @@ public class Item {
      * Instantiates a new Item from database retrieval.
      *
      * @param users           the user from the users table
-     * @param itemLookupId   the itemLookup id from the itemLookup table (if applicable)
      * @param amount         the dollar amount of donation (if applicable)
      * @param id             the id
      * @param charity        the charity given the donation
      * @param date           the date of donation
      */
-    public Item (User users, int itemLookupId, String charity, String date, double amount, int id) {
+    public Item (User users, String description, String charity, String date, double amount, int id) {
         this.users = users;
-        this.itemLookupId = itemLookupId;
+        this.description = description;
         this.charity = charity;
         this.date = date;
         this.id = id;
@@ -100,8 +101,8 @@ public class Item {
     public String toString() {
         return "Item{" +
                 "user='" + users + '\'' +
-                ", itemLookupId='" + itemLookupId + '\'' +
                 ", charity='" + charity + '\'' +
+                ", description='" + description + '\'' +
                 ", date='" + date + '\'' +
                 ", amount='" + amount + '\'' +
                 '}';
@@ -123,24 +124,6 @@ public class Item {
      */
     public void setUsers(User users) {
         this.users = users;
-    }
-
-    /**
-     * Gets itemLookupId.
-     *
-     * @return the itemLookupId
-     */
-    public int getItemLookupId() {
-        return itemLookupId;
-    }
-
-    /**
-     * Sets itemLookupId.
-     *
-     * @param itemLookupId the id from the iteLookup table
-     */
-    public void setItemLookupId(int itemLookupId) {
-        this.itemLookupId = itemLookupId;
     }
 
     /**
@@ -177,6 +160,24 @@ public class Item {
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+    /**
+     * Gets description.
+     *
+     * @return the Item description
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     * Sets id.
+     *
+     * @param description the Item description
+     */
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     /**

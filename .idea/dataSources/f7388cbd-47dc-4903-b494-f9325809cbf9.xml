@@ -921,90 +921,57 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="233" parent="8" name="itemlookup">
+    <table id="233" parent="8" name="itemsubmit">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="234" parent="8" name="itemsubmit">
-      <Engine>InnoDB</Engine>
-    </table>
-    <table id="235" parent="8" name="role">
+    <table id="234" parent="8" name="role">
       <Engine>InnoDB</Engine>
       <Collation>latin1_swedish_ci</Collation>
     </table>
-    <table id="236" parent="8" name="users">
+    <table id="235" parent="8" name="users">
       <Engine>InnoDB</Engine>
     </table>
-    <column id="237" parent="233" name="id">
+    <column id="236" parent="233" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="233" name="category">
-      <Position>2</Position>
-      <DataType>varchar(20)|0</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="239" parent="233" name="description">
-      <Position>3</Position>
-      <DataType>varchar(30)|0</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="240" parent="233" name="value">
-      <Position>4</Position>
-      <DataType>int(11)|0</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="241" parent="233" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="242" parent="234" name="id">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="243" parent="234" name="users_id">
+    <column id="237" parent="233" name="users_id">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="234" name="itemLookup_id">
+    <column id="238" parent="233" name="itemLookup_id">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="234" name="amount">
+    <column id="239" parent="233" name="amount">
       <Position>4</Position>
       <DataType>decimal(6,2)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="234" name="charity">
+    <column id="240" parent="233" name="charity">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="234" name="date">
+    <column id="241" parent="233" name="date">
       <Position>6</Position>
       <DataType>varchar(10)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="248" parent="234" name="fk_cascade">
+    <index id="242" parent="233" name="fk_cascade">
       <ColNames>users_id</ColNames>
     </index>
-    <index id="249" parent="234" name="itemLookup_id">
-      <ColNames>itemLookup_id</ColNames>
-    </index>
-    <key id="250" parent="234" name="PRIMARY">
+    <key id="243" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="251" parent="234" name="fk_cascade">
+    <foreign-key id="244" parent="233" name="fk_cascade">
       <ColNames>users_id</ColNames>
       <RefSchemaName>testdonationtracker</RefSchemaName>
       <RefTableName>users</RefTableName>
@@ -1012,60 +979,54 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="252" parent="234" name="itemsubmit_ibfk_1">
+    <foreign-key id="245" parent="233" name="itemsubmit_ibfk_1">
       <ColNames>users_id</ColNames>
       <RefSchemaName>testdonationtracker</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="253" parent="234" name="itemsubmit_ibfk_2">
-      <ColNames>itemLookup_id</ColNames>
-      <RefSchemaName>testdonationtracker</RefSchemaName>
-      <RefTableName>itemlookup</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="254" parent="235" name="id">
+    <column id="246" parent="234" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="235" name="role_name">
+    <column id="247" parent="234" name="role_name">
       <Position>2</Position>
       <DataType>varchar(25)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="235" name="user_name">
+    <column id="248" parent="234" name="user_name">
       <Position>3</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="235" name="user_id">
+    <column id="249" parent="234" name="user_id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="258" parent="235" name="role_id_uindex">
+    <index id="250" parent="234" name="role_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="259" parent="235" name="role_user_user_id_fk">
+    <index id="251" parent="234" name="role_user_user_id_fk">
       <ColNames>user_id</ColNames>
     </index>
-    <key id="260" parent="235" name="PRIMARY">
+    <key id="252" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="261" parent="235" name="role_id_uindex">
+    <key id="253" parent="234" name="role_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>role_id_uindex</UnderlyingIndexName>
     </key>
-    <foreign-key id="262" parent="235" name="role_user_user_id_fk">
+    <foreign-key id="254" parent="234" name="role_user_user_id_fk">
       <ColNames>user_id</ColNames>
       <RefSchemaName>testdonationtracker</RefSchemaName>
       <RefTableName>users</RefTableName>
@@ -1073,48 +1034,48 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="263" parent="236" name="id">
+    <column id="255" parent="235" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="236" name="first_name">
+    <column id="256" parent="235" name="first_name">
       <Position>2</Position>
       <DataType>varchar(25)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="236" name="last_name">
+    <column id="257" parent="235" name="last_name">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="236" name="user_name">
+    <column id="258" parent="235" name="user_name">
       <Position>4</Position>
       <DataType>varchar(15)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="236" name="password">
+    <column id="259" parent="235" name="password">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="236" name="email">
+    <column id="260" parent="235" name="email">
       <Position>6</Position>
       <DataType>varchar(50)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="269" parent="236" name="users_user_name_uindex">
+    <index id="261" parent="235" name="users_user_name_uindex">
       <ColNames>user_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="270" parent="236" name="PRIMARY">
+    <key id="262" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="271" parent="236" name="users_user_name_uindex">
+    <key id="263" parent="235" name="users_user_name_uindex">
       <ColNames>user_name</ColNames>
       <UnderlyingIndexName>users_user_name_uindex</UnderlyingIndexName>
     </key>

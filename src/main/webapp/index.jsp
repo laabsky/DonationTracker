@@ -3,6 +3,8 @@
 <body>
 <h2>Donation Tracker</h2>
 <p>Welcome to Donation Tracker!!</p>
-<a href="search.jsp">Search Users (login required)</a>
+<a href="toSignupServlet">Sign Up</a>
+<a href="toProfileServlet">Log In</a>
+<a href="toAdminServlet">Admin</a>
 </body>
 </html>

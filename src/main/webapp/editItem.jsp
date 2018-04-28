@@ -14,7 +14,7 @@
         <label for="date">Date: </label>
         <input type="text" id="date" name="date" value="${item.getDate}"><br />
         <input type="hidden" name="id" value="${item.id}" />
-        <input type="submit" name="submit" value="Submit" />
+        <input type="submit" name="submit" value="Submit Item" />
     </form>
 </div>
 </body>

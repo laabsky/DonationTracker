@@ -3,6 +3,7 @@ package DonationTracker.persistence;
 import DonationTracker.entity.Item;
 import DonationTracker.entity.User;
 import DonationTracker.test.Database;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -119,5 +120,14 @@ class ItemDaoTest {
         assertNotNull(retrievedItem);
         assertEquals("March of Dimes", retrievedItem.getCharity());
         assertEquals("Joe", retrievedItem.getUsers().getFirstName());
+    }
+
+    /**
+     * Cleans up database
+     */
+    @AfterAll
+    public static void tearDown() {
+        Database database = Database.getInstance();
+        database.runSQL("cleandb.sql");
     }
 }

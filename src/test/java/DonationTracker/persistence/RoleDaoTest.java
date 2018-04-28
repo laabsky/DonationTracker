@@ -4,6 +4,7 @@ import DonationTracker.entity.Item;
 import DonationTracker.entity.Role;
 import DonationTracker.entity.User;
 import DonationTracker.test.Database;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -109,5 +110,14 @@ class RoleDaoTest {
         assertNotNull(retrievedRole);
         assertEquals("admin", retrievedRole.getRoleName());
         assertEquals("Joe", retrievedRole.getUser().getFirstName());
+    }
+
+    /**
+     * Cleans up database
+     */
+    @AfterAll
+    public static void tearDown() {
+        Database database = Database.getInstance();
+        database.runSQL("cleandb.sql");
     }
 }

@@ -3,6 +3,7 @@
 
 <html>
 <body>
+<h2>Profile</h2>
 <div class="container-fluid">
     <c:forEach var="user" items="${users}">
         <h2>${user.getFirstName()} ${user.getLastName()}</h2>

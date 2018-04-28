@@ -3,6 +3,7 @@ package DonationTracker.persistence;
 import DonationTracker.entity.Item;
 import DonationTracker.entity.User;
 import DonationTracker.test.Database;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -116,12 +117,11 @@ class UserDaoTest {
     @Test
     void insertWithItemSuccess() {
 
-        int itemLookupId = 3;
         double amount = 100.00;
         String charity = "Boyscouts of America";
         String date = "2018-01-31";
         User newUser = new User("Fred", "Flintstone", "fflintstone", "password1", "flinstone2@gmail.com");
-        Item item = new Item( newUser, itemLookupId, amount, charity, date);
+        Item item = new Item( newUser, "Money", amount, charity, date);
         newUser.addItem(item);
         int id = dao.insert(newUser);
         assertNotEquals(0, id);
@@ -129,5 +129,14 @@ class UserDaoTest {
         assertNotNull(insertedUser);
         assertEquals("Fred", insertedUser.getFirstName());
         assertEquals(1, insertedUser.getItems().size());
+    }
+
+    /**
+     * Cleans up database
+     */
+    @AfterAll
+    public static void tearDown() {
+        Database database = Database.getInstance();
+        database.runSQL("cleandb.sql");
     }
 }

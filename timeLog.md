@@ -17,5 +17,13 @@
 | 4/16/18 | Started Multi-thread ex. | 2 |  | 
 | 4/17/18 | Finished Multi-thread ex. | 1 |  | 
 | 4/23/18 | MDB Exercise | 2 |  |
+| 4/26/18 | Added web service to project | 2 |  |
+| 4/27/18 | Creating servlets and jsps | 3 |  |
+| 4/28/18 | Finished servlets and jsps, debugging | 8 |  |
+| 4/29/18 | Jsp templating | 5 |  |
+
+
+
+
 
 

@@ -5,7 +5,6 @@
 <body>
 <h2>Profile</h2>
 <div class="container-fluid">
-    <c:forEach var="user" items="${users}">
         <h2>${user.getFirstName()} ${user.getLastName()}</h2>
         <a href="toAddItemServlet">Add Item</a>
         <table class="table table-striped table-bordered table-hover table-condensed">
@@ -17,13 +16,13 @@
                         <td>${item.charity}</td>
                         <td>${item.date}</td>
                         <td>
-                            <form method="POST" action="toEditItemServlet">
+                            <form method="GET" action="toEditItemServlet">
                                 <input type="hidden" name="id" value="${item.id}" />
                                 <input type="submit" name="submit" value="Edit Item" />
                             </form>
                         </td>
                         <td>
-                            <form method="POST" action="deleteItemServlet">
+                            <form method="GET" action="deleteItemServlet">
                                 <input type="hidden" name="id" value="${item.id}" />
                                 <input type="image" name="delete" src="images/delete.jpg" />
                             </form>
@@ -32,7 +31,6 @@
                 </c:forEach>
 
         </table>
-    </c:forEach>
 </div>
 
 <a href="index.jsp">Home</a>

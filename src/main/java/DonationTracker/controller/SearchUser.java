@@ -38,19 +38,7 @@ public class SearchUser extends HttpServlet {
         } else {
             req.setAttribute("users", userDao.getAllUsers());
         }
-        Client client = ClientBuilder.newClient();
-        WebTarget target =
-                client.target("https://api.data.charitynavigator.org/v2/Organizations?app_id=af6bdcf3&app_key=092ed7ffde8aa8c3818496c099b6dc1a&rated=true&state=WI&city=madison&minRating=3");
-        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        String configResponse = "{\"responseList\": " + response + "}";
-        ObjectMapper mapper = new ObjectMapper();
-        ResponseList results = mapper.readValue(configResponse, ResponseList.class);
-        List<String> charityNames = new ArrayList<String>();
-        for (Response item : results.getResponseList()) {
-            String charityName = item.getCharityName();
-            charityNames.add(charityName);
-        }
-        req.setAttribute("charityNames", charityNames);
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
         dispatcher.forward(req, resp);
     }

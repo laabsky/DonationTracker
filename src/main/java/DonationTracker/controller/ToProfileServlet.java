@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.*;
+import javax.servlet.http.HttpSession;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -42,22 +43,11 @@ public class ToProfileServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String userName = request.getRemoteUser();
         UserDao dao = new UserDao();
-        request.setAttribute("users", dao.getByPropertyEqual("userName", userName));
-        Client client = ClientBuilder.newClient();
-        WebTarget target =
-                client.target("https://api.data.charitynavigator.org/v2/Organizations?app_id=af6bdcf3&app_key=092ed7ffde8aa8c3818496c099b6dc1a&rated=true&state=WI&city=madison&minRating=3");
-        String initResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        String configResponse = "{\"responseList\": " + initResponse + "}";
-        ObjectMapper mapper = new ObjectMapper();
-        ResponseList results = mapper.readValue(configResponse, ResponseList.class);
-        List<String> charityNames = new ArrayList<String>();
-        for (Response item : results.getResponseList()) {
-            String charityName = item.getCharityName();
-            charityNames.add(charityName);
-        }
-        request.setAttribute("charityNames", charityNames);
+        HttpSession session = request.getSession(true);
+        int userId = (int) session.getAttribute("userId");
+        request.setAttribute("user", dao.getUserById(userId));
+
         String url = "/profile.jsp";
 
         RequestDispatcher dispatcher

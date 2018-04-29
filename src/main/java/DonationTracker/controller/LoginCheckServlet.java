@@ -26,36 +26,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A servlet for updating an item.
+ * A servlet for adding an item.
  * @author jlaabs
  */
 
 @WebServlet(
-        urlPatterns = {"/editItemServlet"}
+        urlPatterns = {"/loginCheckServlet"}
 )
 
-public class EditItemServlet extends HttpServlet {
+public class LoginCheckServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession(true);
-        int userId = (int) session.getAttribute("userId");
+        String url = "loginError.jsp";
         UserDao userDao = new UserDao();
-        User user = userDao.getUserById(userId);
-        String  description = req.getParameter("description");
-        double amount = Double.parseDouble(req.getParameter("amount"));
-        String charity = req.getParameter("charity");
-        String date = req.getParameter("date");
-        int id = Integer.parseInt(req.getParameter("id"));
+        String userName = req.getParameter("userName");
+        String password = req.getParameter("password");
+        User user = userDao.getByPropertyEqual("userName", userName).get(0);
+        if (password.equals(user.getPassword())) {
+            HttpSession session = req.getSession(true);
+            session.setAttribute("userId", user.getId());
+            url = "toProfileServlet";
+        }
 
-        ItemDao dao = new ItemDao();
-        Item itemToUpdate = dao.getItemById(id);
-        itemToUpdate.setDescription(description);
-        itemToUpdate.setAmount(amount);
-        itemToUpdate.setCharity(charity);
-        itemToUpdate.setDate(date);
-        dao.saveOrUpdate(itemToUpdate);
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("toProfileServlet");
+        RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, resp);
     }
 }

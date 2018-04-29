@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.*;
+import javax.servlet.http.HttpSession;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -30,10 +31,9 @@ import java.util.List;
 @WebServlet(
         urlPatterns = {"/signupServlet"}
 )
-
 public class SignupServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String url;
         String firstName = req.getParameter("firstName");
         String lastName = req.getParameter("lastName");
@@ -49,7 +49,10 @@ public class SignupServlet extends HttpServlet {
             User insertedUser = userDao.getUserById(userId);
             Role newRole = new Role(insertedUser, "user", insertedUser.getUserName());
             RoleDao roleDao = new RoleDao();
+            insertedUser.addRole(newRole);
             int roleId = roleDao.insert(newRole);
+            HttpSession session = req.getSession(true);
+            session.setAttribute("userId", userId);
             url = "toProfileServlet";
         } else {
             url = "/signup.jsp";

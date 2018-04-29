@@ -33,9 +33,6 @@ public class Item {
     @ManyToOne
     private User users;
 
-    @Column(name = "itemLookup_id")
-    private int itemLookupId;
-
     @Column(name = "amount")
     private double amount;
 

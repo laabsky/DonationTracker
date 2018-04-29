@@ -1,7 +1,7 @@
 <html>
 <body>
 <h2>Sign Up</h2>
-<form method="POST" action="/signupServlet">
+<form method="GET" action="signupServlet">
     <label for="firstName">First Name: </label>
     <input type="text" id="firstName" name="firstName"><br />
     <label for="lastName">Last Name: </label>

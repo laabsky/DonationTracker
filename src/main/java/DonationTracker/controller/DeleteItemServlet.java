@@ -35,7 +35,7 @@ import java.util.List;
 
 public class DeleteItemServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int itemId = Integer.parseInt(req.getParameter("id"));
         ItemDao itemDao = new ItemDao();
         itemDao.delete(itemDao.getItemById(itemId));

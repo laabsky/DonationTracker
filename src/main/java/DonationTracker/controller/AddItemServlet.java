@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.annotation.*;
+import javax.servlet.http.HttpSession;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -35,10 +36,12 @@ import java.util.List;
 
 public class AddItemServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String userName = req.getRemoteUser();
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        HttpSession session = req.getSession(true);
+        int userId = (int) session.getAttribute("userId");
+
         UserDao userDao = new UserDao();
-        User user = userDao.getByPropertyEqual("userName", userName).get(0);
+        User user = userDao.getUserById(userId);
         String  description = req.getParameter("description");
         double amount = Double.parseDouble(req.getParameter("amount"));
         String charity = req.getParameter("charity");

@@ -20,16 +20,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>adminServlet</web-resource-name>
-            <url-pattern>toAdminServlet</url-pattern>
-        </web-resource-collection>
-        <auth-constraint>
-            <role-name>admin</role-name>
-        </auth-constraint>
-    </security-constraint>
-    <security-constraint>
-        <web-resource-collection>
-            <web-resource-name>deleteUserServlet</web-resource-name>
-            <url-pattern>deleteUserServlet</url-pattern>
+            <url-pattern>/admin.jsp</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>admin</role-name>
@@ -38,7 +29,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>profileServlet</web-resource-name>
-            <url-pattern>toProfileServlet</url-pattern>
+            <url-pattern>/toProfileServlet</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>admin</role-name>

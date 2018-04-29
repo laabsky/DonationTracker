@@ -37,7 +37,7 @@ import java.util.List;
 public class LoginCheckServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String url = "loginError.jsp";
+        String url = "userLoginError.jsp";
         UserDao userDao = new UserDao();
         String userName = req.getParameter("userName");
         String password = req.getParameter("password");

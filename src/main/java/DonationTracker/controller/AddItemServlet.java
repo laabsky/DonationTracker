@@ -47,6 +47,7 @@ public class AddItemServlet extends HttpServlet {
         String charity = req.getParameter("charity");
         String date = req.getParameter("date");
 
+
         ItemDao dao = new ItemDao();
         Item item = new Item(user, description, amount, charity, date);
         user.addItem(item);

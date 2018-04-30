@@ -1899,3 +1899,7 @@ section
 	color: #485165;
 	line-height: 49px;
 }
+
+label.error {
+	color:red;
+}

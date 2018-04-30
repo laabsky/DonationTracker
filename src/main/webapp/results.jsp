@@ -62,8 +62,8 @@
                                             <td>${user.getUserName()}</td>
                                             <td>${user.getEmail()}</td>
                                             <td>
-                                                <form method="GET" action="deleteItemServlet">
-                                                    <input type="hidden" name="id" value="${user.getId()}" />
+                                                <form method="GET" action="deleteUserServlet">
+                                                    <input type="hidden" name="deleteId" value="${user.getId()}" />
                                                     <input type="image" name="delete" src="images/delete.png" style="width:25px"/>
                                                 </form>
                                             </td>

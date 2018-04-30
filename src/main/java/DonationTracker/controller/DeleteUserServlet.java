@@ -36,7 +36,7 @@ import java.util.List;
 public class DeleteUserServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int userId = Integer.parseInt(req.getParameter("id"));
+        int userId = Integer.parseInt(req.getParameter("deleteId"));
         UserDao userDao = new UserDao();
         userDao.delete(userDao.getUserById(userId));
 

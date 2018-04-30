@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<%@include file="head.jsp"%>
 
 <body>
 
@@ -35,7 +35,14 @@
         <h1>Error logging in. Please try again</h1>
         <span class="estate_contact_send_btn trans_200" style="padding-top:5px;padding-bottom:5px;padding-right:20px;padding-left:20px;font-size:14px;margin-top:5%;"><a href="userLogin.jsp" style="color:#FFFFFF">Back to Login</a></span>
     </div>
+    <div class="container">
+        <div class="row">
+            <br />
+            <br />
+            <br />
+        </div>
 
+    </div>
 
 
     <%@include file="footer.jsp"%>

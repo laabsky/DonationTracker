@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<%@include file="head.jsp"%>
 
 <body>
 
@@ -42,7 +42,7 @@
                         <div class="contact_title">Sign In</div>
                         <div class="estate_contact_form_container">
                             <div id="loginContainer">
-                                <FORM ACTION="j_security_check" class="estate_contact_form" METHOD="POST">
+                                <FORM ACTION="j_security_check" class="estate_contact_form validate" METHOD="POST">
                                     <TABLE>
                                         <TR><TD>User name: <INPUT TYPE="TEXT" class="estate_input_field estate_contact_form_name" NAME="j_username">
                                         <TR><TD>Password: <INPUT TYPE="PASSWORD" class="estate_input_field estate_contact_form_name" NAME="j_password">
@@ -55,6 +55,14 @@
                 </div>
 
 
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <br />
+                <br />
+                <br />
             </div>
 
         </div>

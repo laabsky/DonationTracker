@@ -35,20 +35,29 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-12 contact_col">
+                <div class="col-lg-6 contact_col">
                     <div class="estate_contact_form">
                         <div class="contact_title">User Search</div>
                         <div class="estate_contact_form_container">
-                            <form method="GET" action="searchUser">
+                            <p>Leave the box empty for ALL users</p>
+                            <form method="GET" id="validate" class="estate_contact_form" action="searchUser">
                                 <label for="searchTerm">Search Term:</label><br />
-                                <input type="text" id="searchTerm" name="searchTerm"><br />
-                                <input type="submit" name="submit" value="Search" />
+                                <input type="text" id="searchTerm" class="estate_input_field estate_contact_form_name" name="searchTerm"><br />
+                                <input type="submit" class="estate_contact_send_btn trans_200" name="submit" value="Search" />
                             </form>
                         </div>
                     </div>
                 </div>
 
 
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <br />
+                <br />
+                <br />
             </div>
 
         </div>

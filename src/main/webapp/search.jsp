@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<%@include file="head.jsp"%>
 
 <body>
 
@@ -37,7 +37,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-12 contact_col">
+                <div class="col-lg-6 contact_col">
                     <div class="estate_contact_form">
                         <div class="contact_title">User Search</div>
                         <div class="estate_contact_form_container">

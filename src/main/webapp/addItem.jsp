@@ -40,7 +40,7 @@
                     <div class="estate_contact_form">
                         <div class="contact_title">Add Item</div>
                         <div class="estate_contact_form_container">
-                            <form method="GET" class="estate_contact_form" action="addItemServlet">
+                            <form method="GET" id="validate" class="estate_contact_form" action="addItemServlet">
                                 <label for="description">Description: </label>
                                 <input type="text" id="description" name="description" class="estate_input_field estate_contact_form_name" value=""><br />
                                 <label for="amount">Amount: </label>
@@ -63,6 +63,14 @@
                 </div>
 
 
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <br />
+                <br />
+                <br />
             </div>
 
         </div>

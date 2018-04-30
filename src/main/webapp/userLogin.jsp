@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<%@include file="head.jsp"%>
 
 <body>
 
@@ -41,7 +41,7 @@
                     <div class="estate_contact_form">
                         <div class="contact_title">Sign In</div>
                         <div class="estate_contact_form_container">
-                            <FORM ACTION="loginCheckServlet" class="estate_contact_form" METHOD="GET">
+                            <FORM ACTION="loginCheckServlet" id="validate" class="estate_contact_form" METHOD="GET">
                                 <label for="userName">User Name: </label>
                                 <input type="text" id="userName" class="estate_input_field estate_contact_form_name" name="userName" value=""><br />
                                 <label for="password">Password: </label>
@@ -56,7 +56,14 @@
             </div>
 
         </div>
+        <div class="container">
+            <div class="row">
+                <br />
+                <br />
+                <br />
+            </div>
 
+        </div>
 
 
         <%@include file="footer.jsp"%>

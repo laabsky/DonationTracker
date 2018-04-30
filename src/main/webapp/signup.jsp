@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<%@include file="head.jsp"%>
 
 <body>
 
@@ -41,7 +41,7 @@
                     <div class="estate_contact_form">
                         <div class="contact_title">Sign Up</div>
                         <div class="estate_contact_form_container">
-                            <form method="GET" class="estate_contact_form" action="signupServlet">
+                            <form method="GET" id="validate" class="estate_contact_form" action="signupServlet">
                                 <label for="firstName">First Name: </label>
                                 <input type="text" id="firstName" class="estate_input_field estate_contact_form_name" name="firstName"><br />
                                 <label for="lastName">Last Name: </label>
@@ -59,6 +59,14 @@
                 </div>
 
 
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <br />
+                <br />
+                <br />
             </div>
 
         </div>

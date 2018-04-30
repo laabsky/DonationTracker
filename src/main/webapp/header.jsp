@@ -9,9 +9,9 @@
                     <!-- Logo -->
 
                     <div class="logo_container">
-                        <img src="images/logoProject.png" alt="" style="width:20%;height:20%;">
-                        <span>Donation</span>
-                        <span>Tracker</span>
+                        <img src="images/logoProject.PNG" alt="" style="width:20%;height:20%;">
+                        <span style="color:#FFFFFF">Donation</span>
+                        <span style="color:#FFFFFF">Tracker</span>
                     </div>
 
                     <!-- Main Navigation -->

@@ -21,6 +21,7 @@
 | 4/27/18 | Creating servlets and jsps | 3 |  |
 | 4/28/18 | Finished servlets and jsps, debugging | 8 |  |
 | 4/29/18 | Jsp templating | 5 |  |
+| 4/30/18 | Finished templating, debug, js validation | 5 |  |
 
 
 

@@ -22,6 +22,7 @@
 | 4/28/18 | Finished servlets and jsps, debugging | 8 |  |
 | 4/29/18 | Jsp templating | 5 |  |
 | 4/30/18 | Finished templating, debug, js validation | 5 |  |
+| 5/1/18 | Debugged AWS Instance and deployed | 2 |  |
 
 
 

@@ -45,7 +45,7 @@ retrieve real time dollar amounts to add to their tax forms.
 
 * [Screen Design](designDocs/screens.md)
 * [Application Flow](designDocs/applicationFlow.md)
-* [Database Design](designDocs/databaseDiagram.jpg)
+* [Database Design](designDocs/databaseDiagram.JPG)
 * [JavaDocs](designDocs/javadocs)
 * [Video Tutorial](https://www.youtube.com/watch?v=zyUbmQaMxNo)
 

@@ -1,0 +1,6 @@
+CharityNavigator
+DonationTracker.controller
+DonationTracker.entity
+DonationTracker.persistence
+DonationTracker.service
+DonationTracker.test

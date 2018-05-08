@@ -8,6 +8,8 @@ import DonationTracker.persistence.ItemDao;
 import DonationTracker.persistence.RoleDao;
 import DonationTracker.persistence.UserDao;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -22,6 +24,7 @@ import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 /**
  * A servlet for forwarding to add item page.
@@ -33,11 +36,16 @@ import java.util.List;
 )
 
 public class ToAddItemServlet extends HttpServlet {
+    private final Logger logger = LogManager.getLogger(this.getClass());
+
+    private Properties properties;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        loadProperties();
         Client client = ClientBuilder.newClient();
         WebTarget target =
-                client.target("https://api.data.charitynavigator.org/v2/Organizations?app_id=af6bdcf3&app_key=092ed7ffde8aa8c3818496c099b6dc1a&rated=true&state=WI&city=madison&minRating=3");
+                client.target(properties.getProperty("url"));
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
         String configResponse = "{\"responseList\": " + response + "}";
         ObjectMapper mapper = new ObjectMapper();
@@ -50,5 +58,17 @@ public class ToAddItemServlet extends HttpServlet {
         req.setAttribute("charityNames", charityNames);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/addItem.jsp");
         dispatcher.forward(req, resp);
+    }
+
+    private void loadProperties() {
+        properties = new Properties();
+        try {
+            properties.load (this.getClass().getResourceAsStream("/api.properties"));
+        } catch (IOException ioe) {
+            logger.error(ioe);
+        } catch (Exception e) {
+            logger.error(e);
+        }
+
     }
 }

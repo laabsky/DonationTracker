@@ -26,35 +26,75 @@ public class Role {
     @Column(name="role_name")
     private String roleName;
 
+    /**
+     * Instantiates a new Role.
+     */
     public Role() {
     }
 
+    /**
+     * Instantiates a new Role.
+     *
+     * @param users      the user object
+     * @param roleName  the role name
+     * @param userName  the user name
+     */
     public Role(User users, String roleName, String userName) {
         this.users = users;
         this.roleName = roleName;
         this.userName = userName;
     }
 
+    /**
+     * Gets role id.
+     *
+     * @return the role id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets role id.
+     *
+     * @param id the new id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets user.
+     *
+     * @return the user
+     */
     public User getUser() {
         return users;
     }
 
+    /**
+     * Sets user.
+     *
+     * @param user the user object
+     */
     public void setUser(User user) {
         this.users = users;
     }
 
+    /**
+     * Gets role name.
+     *
+     * @return the role name
+     */
     public String getRoleName() {
         return roleName;
     }
 
+    /**
+     * Sets role name.
+     *
+     * @param roleName the role name
+     */
     public void setRoleName(String roleName) {
         this.roleName = roleName;
     }

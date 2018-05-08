@@ -45,9 +45,17 @@
 1. Dao adds item to the database
 1. Servlet sends confirmation to report page that report has been added.
 
-### About
+### Admin Page
 
-1. Static page - no java
+1. Option only available to logged in users with proper role
+1. User directed to admin JSP
+1. User enters user details
+1. Details are sent to searchUser servlet, send to dao
+1. Servlet returns list, shows on jsp
+1. link to delete user
+1. form sends user info to deleteUser servlet
+1. servlet sends user info to dao, dao deletes, returns to admin page
+
 
 
 

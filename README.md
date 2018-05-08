@@ -6,7 +6,7 @@ This repository will serve as my final project for Madison College's Enterprise 
 
 With the increasing need to itemize deductions in order to maximize tax returns, it is more important than ever to 
 maintain accurate records of your charitable donations. Donation Tracker will help solve this by creating a single
-environment with which to track both monetary donations and tangible goods. This will aloow the user to track and
+environment with which to track both monetary donations and tangible goods. This will allow the user to track and
 retrieve real time dollar amounts to add to their tax forms.
 
 ### Project Technologies/Techniques 
@@ -24,7 +24,7 @@ retrieve real time dollar amounts to add to their tax forms.
 * Dependency Management
   * Maven
 * Web Services consumed using Java
-  * Calendar API
+  * Charity API
 * CSS 
   * Bootstrap
 * Data Validation
@@ -46,6 +46,7 @@ retrieve real time dollar amounts to add to their tax forms.
 * [Screen Design](designDocs/screens.md)
 * [Application Flow](designDocs/applicationFlow.md)
 * [Database Design](designDocs/databaseDiagram.png)
+* [Video Tutorial](https://www.youtube.com/watch?v=zyUbmQaMxNo)
 
 ### [Project Plan](projectPlan.md)
 

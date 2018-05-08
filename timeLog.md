@@ -23,6 +23,7 @@
 | 4/29/18 | Jsp templating | 5 |  |
 | 4/30/18 | Finished templating, debug, js validation | 5 |  |
 | 5/1/18 | Debugged AWS Instance and deployed | 2 |  |
+| 5/1/18 | Lost 4 hours of work with lost commits, tweaks, video, docs, issues | 8 |  |
 
 
 

@@ -38,15 +38,6 @@ class UserDaoTest {
     }
 
     /**
-     * Verifies getting users by last name input successfully
-     */
-    @Test
-    void getUsersByLastNameSuccess() {
-        List<User> users = dao.getUsersByLastName("c");
-        assertEquals(3, users.size());
-    }
-
-    /**
      * Verifies getting users by ID input successfully
      */
     @Test
@@ -66,7 +57,7 @@ class UserDaoTest {
         int id = dao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = dao.getUserById(id);
-        assertEquals("Test", insertedUser.getFirstName());
+        assertEquals(newUser, insertedUser);
 
     }
 
@@ -80,7 +71,7 @@ class UserDaoTest {
         userToUpdate.setEmail(newEmail);
         dao.saveOrUpdate(userToUpdate);
         User updatedUser = dao.getUserById(4);
-        assertEquals(newEmail, updatedUser.getEmail());
+        assertEquals(userToUpdate, updatedUser);
     }
 
     /**
@@ -127,7 +118,7 @@ class UserDaoTest {
         assertNotEquals(0, id);
         User insertedUser = dao.getUserById(id);
         assertNotNull(insertedUser);
-        assertEquals("Fred", insertedUser.getFirstName());
+        assertEquals(newUser, insertedUser);
         assertEquals(1, insertedUser.getItems().size());
     }
 

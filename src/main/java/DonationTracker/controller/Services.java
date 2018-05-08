@@ -1,6 +1,6 @@
-package DonationTracker.persistence;
+package DonationTracker.controller;
 
-import DonationTracker.controller.ServicesResponse;
+import DonationTracker.service.UserService;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -17,7 +17,7 @@ public class Services extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
-        h.add(ServicesResponse.class );
+        h.add(UserService.class );
         return h;
     }
 }

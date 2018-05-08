@@ -212,5 +212,24 @@ public class Item {
     public void setDate(String date) {
         this.date = date;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Item item = (Item) o;
+        return Double.compare(item.amount, amount) == 0 &&
+                id == item.id &&
+                Objects.equals(users, item.users) &&
+                Objects.equals(description, item.description) &&
+                Objects.equals(charity, item.charity) &&
+                Objects.equals(date, item.date);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(users, amount, description, id, charity, date);
+    }
 }
 

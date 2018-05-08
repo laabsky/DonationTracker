@@ -20,91 +20,87 @@
 - [x] Create the test database
 - [x] Create user dao unit tests
 - [x] Weekly journal entry
-- [ ] Create application flow
+- [x] Create application flow
 - [x] Set up logging
-- [ ] Create class uml diagram
 - [x] Prepare for Week 5 peer design/code review
 
 
 ### Week 5
 
-- [ ] Create the template for all jsps using bootstrap or materialize
+- [x] Create the template for all jsps using bootstrap or materialize
 - [x] Weekly journal entry
 - [x] Add the role table
 - [x] Add the role entity
 - [x] Create the role dao
 - [x] Create the role dao unit tests
 - [x] Add a jsp to display user and associated items
-- [ ] Add jsp to add a user
+- [x] Add jsp to add a user
 
 ### Week 6
 
 - [x] Create db on AWS
 - [x] Deploy to AWS for first time
 - [x] Weekly journal entry
-- [ ] Update JSP for role
-- [ ] Add update and delete functionality in jsp for user and role
-- [ ] Build the item submission jsp
-- [ ] Build the profile landing jsp
+- [x] Update JSP for role
+- [x] Add update and delete functionality in jsp for user and role
+- [x] Build the item submission jsp
+- [x] Build the profile landing jsp
 - [x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
 
 
 ### Week 7
 
-- [ ] Weekly journal entry
-- [ ] Set up authentication locally
-- [ ] Set up authentication on AWS
-- [ ] Review and incorporate any feedback from Checkpoint 2.
+- [x] Weekly journal entry
+- [x] Set up authentication locally
+- [x] Set up authentication on AWS
+- [x] Review and incorporate any feedback from Checkpoint 2.
 
 
 ### Week 8
 
-- [ ] Weekly journal entry
-- [ ] Integration with calendar api
-- [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
+- [x] Weekly journal entry
+- [x] Integration with charity api
+- [x] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
 
 ### Week 9
-- [ ] Weekly journal entry
-- [ ] Review and incorporate feedback from Checkpoint 3.
-- [ ] Carefully review code for standards and best practices - use a code quality tool? 
+- [x] Weekly journal entry
+- [x] Review and incorporate feedback from Checkpoint 3.
 
 ### Week 8
-- [ ] Weekly journal entry
-- [ ] Implement paging of search results
-- [ ] Code review
+- [x] Weekly journal entry
+- [x] Code review
 
 ### Week 9
-- [ ] Weekly journal entry
-- [ ] Add password reset/reminder functionality
+- [x] Weekly journal entry
 
 ### Week 10
-- [ ] Weekly journal entry
-- [ ] Unit test all api integrations
+- [x] Weekly journal entry
+- [x] Unit test all api integrations
 
 ### Week 11 - Team project work week
-- [ ] Weekly journal entry
+- [x] Weekly journal entry
 
 ### Week 12 - Team project due
-- [ ] Weekly journal entry
-- [ ] Review indie project and create list of todos
+- [x] Weekly journal entry
+- [x] Review indie project and create list of todos
 
 ### Week 13
-- [ ] Weekly journal entry
-- [ ] Complete todos identified in week 12
-- [ ] Prepare for week 13 peer code reviews
-- [ ] Code quality check
-- [ ] Review rubric to make sure I'm on target
+- [x] Weekly journal entry
+- [x] Complete todos identified in week 12
+- [x] Prepare for week 13 peer code reviews
+- [x] Code quality check
+- [x] Review rubric to make sure I'm on target
 
 ### Week 14
-- [ ] Weekly journal entry
-- [ ] Create final presentation
+- [x] Weekly journal entry
+- [x] Create final presentation
 
 ### Week 15
-- [ ] Final Presentation
-- [ ] Create video
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [x] Final Presentation
+- [x] Create video
+- [x] Finalize all documentation
+- [x] Code quality check
 
 ### Week 16
-- [ ] Weekly journal entry
-- [ ] Final touches before code complete
+- [x] Weekly journal entry
+- [x] Final touches before code complete

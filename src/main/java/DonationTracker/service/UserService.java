@@ -1,4 +1,4 @@
-package DonationTracker.controller;
+package DonationTracker.service;
 
 import DonationTracker.entity.User;
 import DonationTracker.persistence.UserDao;
@@ -14,14 +14,13 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-@Path("/access")
-public class ServicesResponse {
-    @Path("/users")
+@Path("/users")
+public class UserService {
     // The Java method will process HTTP GET requests
     @GET
     // The Java method will produce content identified by the MIME Media type "text/plain"
     //@Produces(MediaType.APPLICATION_JSON)
-    @Produces("text/plain")
+    @Produces(MediaType.APPLICATION_JSON)
     public Response getUsersService() throws JsonProcessingException { ;
         UserDao userDao = new UserDao();
         List<User> results = userDao.getAllUsers();

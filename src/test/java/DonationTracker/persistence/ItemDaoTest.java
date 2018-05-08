@@ -67,7 +67,7 @@ class ItemDaoTest {
         assertNotNull(insertedItem);
         assertEquals(charity, insertedItem.getCharity());
         assertNotNull(insertedItem.getUsers());
-        assertEquals("Joe", insertedItem.getUsers().getFirstName());
+        assertEquals(newItem, insertedItem);
     }
 
     /**
@@ -80,7 +80,7 @@ class ItemDaoTest {
         itemToUpdate.setDate(newDate);
         dao.saveOrUpdate(itemToUpdate);
         Item updatedItem = dao.getItemById(1);
-        assertEquals(newDate, updatedItem.getDate());
+        assertEquals(itemToUpdate, updatedItem);
     }
 
     /**
